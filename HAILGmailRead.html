@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en-gb">
+    <head>
+        <title>HAIL Gmail - Read</title>
+        
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="onScreenKeyboard.css">
+        <link href="layout.css" type="text/css" rel="stylesheet" />
+      
+        <style>
+          
+        body {
+          overflow:hidden;
+        }
+
+          thead{
+          
+              background-color: #F0FFF0;
+              color: black;
+            
+          }
+        </style>
+    </head>
+    <body>
+        
+     <div id="page">
+        <div id="header">
+           <<h1 class="gmail-header1"><em>HAIL Gmail</em></h1> 
+        </div>
+        <div id="middle">
+       <button class="prev" onclick="scrollWin(0, -200)">▲</button>
+        
+        
+        <div class="content-pane" id="content">
+
+        <table class="table table-hover table-inbox hidden tableFont">
+        <thead>
+          <tr>
+            <th>From</th>
+            <th>Subject</th>
+            <th>Date/Time</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table> 
+       
+    </div>
+
+    <div class="modal fade" id="reply-modal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title">Reply</h4>
+          </div>
+          <form onsubmit="return sendReply();">
+            <input type="hidden" id="reply-message-id" />
+
+            <div class="modal-body">
+              <div class="form-group">
+                <input type="text" class="form-control" id="reply-to" disabled />
+              </div>
+
+              <div class="form-group">
+                <input type="text" class="form-control disabled" id="reply-subject" disabled />
+              </div>
+
+              <div class="form-group">
+                <textarea class="form-control" id="reply-message osk-trigger" placeholder="Message" rows="5" required></textarea>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="submit" id="reply-button" class="btn btn-primary">Send</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <button class="next" onclick="scrollWin(0, 200)">▼</button>
+        
+    </div>  
+  
+        <div class="footer">
+        <button onclick="history.go()" class="buttonBottom">Refresh</button> 
+        
+        <input type="button" class="buttonBottom" onclick="location.href='HAILGmailSend.html';" value="Compose"/>
+        </div>
+       
+        </div>
+        
+        <script>
+            function scrollWin(x, y) {
+                window.scrollBy(x, y);
+        }
+        </script>
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="gmail.js"></script>
+        <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+      
+    </body>
+</html>

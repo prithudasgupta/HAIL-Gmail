@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-gb">
+    <head>
+        <title>HAIL Gmail - Send</title>
+        
+        <meta charset="utf-8">
+        
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="onScreenKeyboard.css">
+        <link href="layout.css" type="text/css" rel="stylesheet" />
+        
+        <style>
+			html {
+				font-family: Calibri, Arial, sans-serif;
+			}
+			#input_container {
+				width: 50%;
+				margin: 2% auto;
+				display: block;
+			}
+			#input_container > input,
+			#input_container > textarea {
+				font-family: inherit;
+				font-size: 3em;
+				width: 98%;
+				display: block;
+				resize: none;
+				margin-bottom: 1em;
+				border: 1px solid #333;
+				padding: 0.25em;
+				background: #FEFEFE;
+			}
+		</style>
+    </head>
+    <body>
+    	  
+       	<p class="gmail-header3">HAIL Gmail- Send</p>
+        <form onsubmit="return sendEmail();" id="input_container" action="HAILGmailSend.html">
+            
+            <button type="submit" id="send-button" onclick="sentMail()" class="gmail-header2">SEND</button>
+            <input type="text" class="osk-trigger form-control" id="compose-to" placeholder="To" required name="to" list="emails"/>
+			<datalist id="emails">
+  				<option value="prithudasgupta@gmail.com">
+  				<option value="7742758461@vtext.com">
+  				<option value="pallab@synopsys.com">
+  				<option value="lakshk@Hotmail.com">
+			</datalist>
+            <input type="text" class="osk-trigger form-control" id="compose-subject" placeholder="Subject" required name="subject" list="subjects" />
+            <datalist id="subjects">
+  				<option value="Hello">
+  				<option value="How Are You?">
+  				<option value="Thank You">
+			</datalist>
+			
+            <textarea class="osk-trigger form-control" id="compose-message" placeholder="Message" rows="2" required></textarea>
+            
+            </form>
+        
+        <button class="prev2" onclick="history.go()">Cancel</button>
+        <input type="button" class="next2" onclick="location.href='HAILGmailRead.html';" value="Inbox"/>
+
+       
+        <h1 class="gmail-header4">HAIL Gmail</h1>
+        
+        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="gmail.js"></script>
+        <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script src="jquery.onScreenKeyboard.js"></script>
+		<script>
+			$(function () {
+				$('#input_container').children('.osk-trigger').onScreenKeyboard({
+					'topPosition': 425,
+					'leftPosition': 0,
+					'rewireTab' : true
+				});
+			});
+		</script>
+		<script>
+            function sentMail() {
+                var el = document.getElementById('send-button');
+            		
+                setTimeout(function(){
+    				el.innerHTML = "SEND";
+                	el.className = 'gmail-header2';
+                	document.getElementById('compose-to').value = "";
+                	document.getElementById('compose-subject').value = "";
+                	document.getElementById('compose-message').value = "";
+				}, 1500);
+				
+                el.className = 'gmail-header5';
+                el.innerHTML = "Message Sent Successfully!";
+                
+                
+        }
+        </script>
+
+		
+    </body>
+</html>

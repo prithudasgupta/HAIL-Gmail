@@ -1,0 +1,258 @@
+            .gmail-header1{
+                position: fixed;
+                font-weight: bold;
+                top: 0px;
+                left: 0px;
+                margin: 0px;
+                width: 100%;
+                font-size: 300%;
+                padding: 20px 15px;
+                text-align: center;
+                background-color: #e7e7e7;
+                color: #f44336;
+                font-family: "Comic Sans MS", cursive, sans-serif;
+                z-index: 10;
+            }
+            .gmail-header4{
+                position: fixed;
+                font-weight: bold;
+                bottom: 0px;
+                left: 0px;
+                margin: 0px;
+                width: 100%;
+                font-size: 300%;
+                padding: 30px 15px;
+                text-align: center;
+                background-color: #EEE;
+                color: #f44336;
+                font-family: "Comic Sans MS", cursive, sans-serif;
+                z-index: 10;
+            }
+            .gmail-header2{
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                margin: 0px;
+                width: 100%;
+                font-size: 300%;
+                 padding: 10px 15px;
+                
+                text-align: center;
+                background-color: #008CBA;
+                color: white;
+                z-index: 10;
+            }
+            .gmail-header2:hover {
+                background-color: white;
+                color: black;
+            }
+
+            .gmail-header2 :active {
+              background-color: #008CBA;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+            .gmail-header3{
+               position: relative;
+                top: 0px;
+                left: 0px;
+                margin: 0px;
+                width: 100%;
+                font-size: 300%;
+                 padding: 10px 15px;
+                
+                text-align: center;
+                background-color: #008CBA;
+                color: black;
+                z-index: 10;
+            }
+            .gmail-header5{
+                
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                margin: 0px;
+                width: 100%;
+                font-size: 300%;
+                 padding: 10px 15px;
+                
+                text-align: center;
+                background-color: #FFFF99;
+                color: black;
+                z-index: 10;
+            }
+            .footer{
+                left: 0px;
+                position: fixed;
+                bottom: 0px;
+                margin: 0px;
+                width: 100%;
+            }
+            .buttonBottom {
+                background-color: #008CBA;
+                color: white;
+                border: 1px solid blue;
+                float: left;
+                padding: 32px 24px;
+                text-align: center;
+                font-size: 200%;
+                width: 50%;
+                cursor: pointer;
+                box-shadow: 0 9px #999;
+            }
+            
+            .buttonBottom:hover {
+                background-color: white;
+                color: black;
+            }
+
+            .buttonBottom:active {
+              background-color: #008CBA;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+            .prev{
+                position: fixed;
+                left: 0px;
+                top: 86px;
+                float:left;
+                bottom: 104px;
+                padding: 160px 46px; 
+                text-align: center;
+                background-color: #98FB98; /* Green */
+                border: 1px solid green;
+                color: white;
+                font-size: 30px;
+    
+            }
+            .prev:hover {
+                border: 1px solid green;
+                background-color: white;
+                color: black;
+            }
+
+            .prev:active {
+              border: 1px solid green;
+              background-color: #98FB98;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+            .prev2{
+                position: fixed;
+                left: 0px;
+                top: 76px;
+                float:left;
+                bottom: 104px;
+                text-align: center;
+                background-color: #98FB98; /* Green */
+                border: 1px solid green;
+                color: white;
+                font-size: 30px;
+                width: 10%;
+    
+            }
+            .prev2:hover {
+                border: 1px solid green;
+                background-color: white;
+                color: black;
+            }
+
+            .prev2:active {
+              border: 1px solid green;
+              background-color: #98FB98;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+            .next{
+                position: fixed;
+                right: 0px;
+                top: 86px;
+                float:right;
+                bottom: 104px;
+                padding: 160px 45px; 
+                text-align: center;
+                background-color: #98FB98; /* Green */
+                border: 1px solid green;
+                color: white;
+                font-size: 30px;
+            
+            }
+            .next:hover {
+                 border: 1px solid green;
+                background-color: white;
+                color: black;
+            }
+
+            .next:active {
+                 border: 1px solid green;
+              background-color:#98FB98;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+            .next2{
+                position: fixed;
+                right: 0px;
+                top: 76px;
+                float:right;
+                bottom: 104px;
+                width: 10%;
+                text-align: center;
+                background-color: #98FB98; /* Green */
+                border: 1px solid green;
+                color: white;
+                font-size: 30px;
+            }
+            .next2:hover {
+                 border: 1px solid green;
+                background-color: white;
+                color: black;
+            }
+
+            .next2:active {
+                 border: 1px solid green;
+              background-color:#98FB98;
+              box-shadow: 0 5px #666;
+              transform: translateY(4px);
+            }
+            .content-pane{
+              
+                border: 1px black;
+                position: relative;
+                left: 125px;
+                top: 60px;
+                width: 1120px;
+                height: 491px;
+                text-align: left;
+                
+            }
+            iframe {
+                width: 100%;
+                border: 0;
+                min-height: 80%;
+                height: 400px;
+                display: flex;
+                
+             }  
+             .tableFont{
+                 font-size: 150%;
+             }
+             .extra{
+                 resize: both;
+                 overflow: auto;
+             }
+             .send-form{
+                 left: 100px;
+                 top: 0px;
+                 position: fixed;
+                 width: 100%;
+                 background-color: green;
+                 margin: 10px;
+             }
+             .send-button{
+                 background-color: blue;
+                 color: white;
+                 left: 0px;
+                 top: 0px;
+                 padding: 40px 50px;
+                 }
+            
