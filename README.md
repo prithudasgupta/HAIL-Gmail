@@ -1,6 +1,6 @@
 # HAIL-Gmail
 
-HAIL-Gmail is an email interface for users with disabilities that was built with the GMail API.
+HAIL-Gmail is an email interface for users with disabilities that was built with the Gmail API.
 
 You can read our paper in paper.pdf. 
 
